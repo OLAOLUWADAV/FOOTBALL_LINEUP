@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.ola{
+    /* background-image: url(/istockphoto-915087622-612x612.jpg); background-repeat: no-repeat; background-position: 100px; transform: rotate(-90deg); height: 1000vh; */
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 200px;
+    position: relative;
+    transform: rotate(-90deg);
+    
+}
+
+.ola1{
+    position: absolute;
+    bottom: 21%;
+    right: 69%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.ola2{
+    position: absolute;
+    bottom: 0%;
+    right: 59%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.ola3{
+    position: absolute;
+    bottom: 42%;
+    right: 59%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+
+.ola4{
+    position: absolute;
+    bottom: 21%;
+    right: 47%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.ola5{
+    position: absolute;
+    bottom: 13%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.ola6{
+    position: absolute;
+    bottom: 27%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+.number1 {
+    position: absolute;
+    bottom: 28%;
+    right: 69%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+
+
+.number2 {
+    position: absolute;
+    bottom: 8%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+
+.number3 {
+    position: absolute;
+    bottom: 50%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+
+.number4 {
+    position: absolute;
+    bottom: 29%;
+    right: 47%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+
+.number5 {
+    position: absolute;
+    bottom: 21%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+
+.number6 {
+    position: absolute;
+    bottom: 35%;
+    right: 60%;
+    color: #ffffff;
+    transform: rotate(90deg)
+
+}
+

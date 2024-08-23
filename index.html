@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" placeholder="Player Name" id="yoyo">
+<select id="opt">
+    <option value="">Select position</option>
+    <option id="goal" value="1">NO. 1 GoalKeeper</option>
+    <option id="goal1" value="2">NO. 2 RightBack </option>
+    <option id="goal2" value="3">NO. 3 RightBack </option>
+    <option id="goal3" value="4">NO. 4 RightBack </option>
+    <option id="goal4" value="5">NO. 5 RightBack </option>
+    <option id="goal5" value="6">NO. 6 RightBack </option>
+    <option id="goal6" value="7">NO. 7 RightBack </option>
+    <option id="goal7" value="8">NO. 8 RightBack </option>
+    <option id="goal8" value="9">NO. 9 RightBack </option>
+    <option id="goal9" value="10">NO. 10 RightBack </option>
+    <option id="goal10" value="11">NO. 11 RightBack </option>
+
+</select>
+<button onclick="addPlayer()">ADD PLAYER</button>
+<button onclick="firstFormation()">display First formation </button>
+<br>
+
+<div class="ola" id="disp"> <div id="dispd"></div>
+    <br><br><br><br><br>
+    <br><br><br><br><br><br><br> <br>
+
+    <img src="/istockphoto-915087622-612x612.jpg"  alt="" width="60%">
+    
+</div>
+
+
+
+    <script>
+
+        
+        class Player{
+             constructor(pName, pPosition){
+                this.named = pName,
+                this.position = pPosition
+             }
+
+             playerL(){
+             }
+
+        }
+
+        let team = [] 
+        let team1 = []
+        let team2 = []
+        let team3 = []
+        let team4 = []
+        let team5 = []
+        let team6 = []
+        const addPlayer = () => {
+            let pnn = document.getElementById("yoyo").value
+            let num = document.getElementById('opt').value
+
+            let playerName = new Player(pnn, num )
+            if (pnn == "" || num == "") {
+                alert("please enter player number and posion")
+                
+            }
+           else if (num == "1") {
+                team.push(playerName)
+                playerName.playerL();
+                document.getElementById("goal").style.display = "none"
+                disp.innerHTML +=   `<p class="ola1"><img src="/images-removebg-preview.png" width="50px"><br>${team[0].named}<br> GK</p> <div class="number1">${1}</div>`
+
+                document.getElementById("opt").value = ""
+                document.getElementById("yoyo").value = "";
+            }else if (num == "2") {
+                team1.push(playerName)
+                disp.innerHTML +=   `<p class="ola2"><img src="/Untitled-1-removebg-preview.png" width="50px"><br>${team1[0].named}<br> RB</p> <div class="number2">${num}</div>`
+                playerName.playerL();
+                document.getElementById("goal1").style.display = "none"
+                document.getElementById("opt").value = "";
+                document.getElementById("yoyo").value = "";
+
+        
+    }else if (num == "3") {
+                team2.push(playerName)
+                disp.innerHTML +=   `<p class="ola3"><img src="/Untitled-1-removebg-preview.png" width="50px"><br>${team2[0].named}<br> RB</p> <div class="number3">${num}</div>`
+                playerName.playerL();
+                document.getElementById("goal2").style.display = "none"
+                document.getElementById("opt").value = "";
+                document.getElementById("yoyo").value = "";
+                
+        }else if (num == "4") {
+                team3.push(playerName)
+                disp.innerHTML +=   `<p class="ola4"><img src="/Untitled-1-removebg-preview.png" width="50px"><br>${team3[0].named}<br> RB</p> <div class="number4">${num}</div>`
+                playerName.playerL();
+                document.getElementById("goal3").style.display = "none"
+                document.getElementById("opt").value = "";
+                document.getElementById("yoyo").value = "";
+                
+        }else if (num == "5") {
+                team4.push(playerName)
+                disp.innerHTML +=   `<p class="ola5"><img src="/Untitled-1-removebg-preview.png" width="50px"><br>${team4[0].named}<br> RB</p> <div class="number5">${num}</div>`
+                playerName.playerL();
+                document.getElementById("goal4").style.display = "none"
+                document.getElementById("opt").value = "";
+                document.getElementById("yoyo").value = "";
+                
+        } else if (num == "6") {
+                team5.push(playerName)
+                disp.innerHTML +=   `<p class="ola6"><img src="/Untitled-1-removebg-preview.png" width="50px"><br>${team4[0].named}<br> RB</p> <div class="number6">${num}</div>`
+                playerName.playerL();
+                document.getElementById("goal5").style.display = "none"
+                document.getElementById("opt").value = "";
+                document.getElementById("yoyo").value = "";
+                
+        }
+
+        const firstFormation = () => {
+            displl.innerHTML +=   `<p class="ola1">${team[0].named}<br> GK</p>`
+
+            
+        }
+        }
+
+        
+
+        // let numberOne = new Player("taoheed",10);
+        // numberOne.playerL();
+
+
+    </script>
+</body>
+</html>
